@@ -21,16 +21,15 @@ public class Personagem : MonoBehaviour {
 
     void KeyLoop()//Coloque aqui coisas que devem ser atualizadas junto com os check-ups de inputs de teclado/mouse ou joystick
     {
-        stateController.EvoluirEstadoAtual(this, Time.deltaTime);
+        stateController.EvoluirEstadoAtual(Time.deltaTime);
     }
     void PhysiscsLoop()//Coloque aqui coisas que devem ser atualizadas junto com a física do jogo
     {
 
     }
 
-    public ControladorDeEstados stateController;    
-
+    public ControladorDeEstados stateController;
     public FuncoesFisicas physics;
-
+    public Animador animationController;
 
 }
